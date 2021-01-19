@@ -1,0 +1,2 @@
+Invoking command in '/home/yn4k4nishi/ros2_ws/src/ros2_prac/build/ros2_prac': /usr/bin/cmake /home/yn4k4nishi/ros2_ws/src/ros2_prac -DCMAKE_INSTALL_PREFIX=/home/yn4k4nishi/ros2_ws/src/ros2_prac/install/ros2_prac
+Invoked command in '/home/yn4k4nishi/ros2_ws/src/ros2_prac/build/ros2_prac' returned '1': /usr/bin/cmake /home/yn4k4nishi/ros2_ws/src/ros2_prac -DCMAKE_INSTALL_PREFIX=/home/yn4k4nishi/ros2_ws/src/ros2_prac/install/ros2_prac
