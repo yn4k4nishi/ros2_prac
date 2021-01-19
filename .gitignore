@@ -51,3 +51,6 @@ qtcreator-*
 CATKIN_IGNORE
 
 cmake-build-debug/
+
+install
+log
