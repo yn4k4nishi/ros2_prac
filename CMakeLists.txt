@@ -12,7 +12,8 @@ endif()
 
 find_package(ament_cmake REQUIRED)
 find_package(rclcpp REQUIRED)
-find_package(std_msgs REQUIRED IMPORTED)
+find_package(std_msgs REQUIRED)
+find_package(example_interfaces REQUIRED)
 
 add_executable(talker src/talker.cpp)
 ament_target_dependencies(talker rclcpp std_msgs)
@@ -20,9 +21,17 @@ ament_target_dependencies(talker rclcpp std_msgs)
 add_executable(listener src/listener.cpp)
 ament_target_dependencies(listener rclcpp std_msgs)
 
+add_executable(server src/server.cpp)
+ament_target_dependencies(server rclcpp std_msgs example_interfaces)
+
+add_executable(client src/client.cpp)
+ament_target_dependencies(client rclcpp std_msgs example_interfaces)
+
 install(TARGETS
         talker
         listener
+        server
+        client
         DESTINATION lib/${PROJECT_NAME}
         )
 
